@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.devsuperior.dscatalog.entities.Category;
+import com.devsuperior.dscatalog.dto.CategoryDTO;
 import com.devsuperior.dscatalog.services.CategoryService;
 
 //Recursos Rest
@@ -21,8 +21,8 @@ public class CategoryResource {
 	
 //Criação de endpoints CRUD (salvar, Deletar, buscar...)
 	@GetMapping //Para configurar que esse método a seguir vai ser um webservice
-	public ResponseEntity<List<Category>>	findAll() {
-		List<Category> list = service.finAll();
+	public ResponseEntity<List<CategoryDTO>>	findAll() {
+		List<CategoryDTO> list = service.finAll();
 		return ResponseEntity.ok().body(list);
 	}
 }
