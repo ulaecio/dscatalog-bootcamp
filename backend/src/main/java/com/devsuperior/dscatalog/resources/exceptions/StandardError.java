@@ -28,8 +28,8 @@ public class StandardError implements Serializable{
 		return status;
 	}
 
-	public void setStatus(Integer satatus) {
-		this.status = satatus;
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 
 	public String getError() {

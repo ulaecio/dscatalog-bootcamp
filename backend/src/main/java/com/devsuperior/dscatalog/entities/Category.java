@@ -12,8 +12,6 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
-import org.springframework.http.HttpStatus;
-
 @Entity
 @Table(name = "tb_category")
 public class Category implements Serializable{
