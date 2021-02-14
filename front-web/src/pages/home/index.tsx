@@ -13,13 +13,12 @@ const Home = () => (
         <p className="text-subtitle">
           Ajudaremos você a encontrar os melhores <br /> produtos disponíveis no mercado.
          </p>
-        <Link to="/catalog">
+        <Link to="/products">
           <ButtonIcon text="inicie agora a sua busca" />
         </Link>
       </div>
       <div className="col-6">
         <MainImage className="main-image" />
-
       </div>
     </div>
   </div>
