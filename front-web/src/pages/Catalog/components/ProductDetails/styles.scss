@@ -11,6 +11,7 @@
 .product-details-goback{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .icon-goback {
@@ -25,4 +26,31 @@
     color: #263238;
     text-transform: uppercase;
     margin-left: 40px;
+}
+
+.product-details-card{
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+    padding: 38px 29px;
+}
+
+.product-details-image{
+    width: 380px;
+    height: 380px;
+}
+
+.product-description-title{
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: #9E9E9E;
+    margin-bottom: 25px;
+}
+
+.product-details-name{
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.015em;
+    margin-top: 35px;
+    
 }
