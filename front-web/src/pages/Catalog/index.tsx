@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "./components/ProductCard";
 import "./styles.scss";
+import { makeRequest } from "./components/utils/request";
 
 const Catalog = () => {
   //Quando a lista de produtos estiver disponível,
@@ -9,15 +10,17 @@ const Catalog = () => {
   
   //Quando o componente iniciar, buscar a lista de produto
   useEffect(() => {
-
+    const params = {
+      page: 0,
+      linesPerPage: 12
+    }
     //Limitações do fech: 
     //muito verboso,
     //não tem suporte pare ler progresso de upload de arquivos e
     //não tem suporte nativo para enviar query de strings
     //Assim substituiremos <fech> por <axios>
     
-    fetch('http://localhost:3000/products')
-      .then((response) => response.json())
+    makeRequest({ url: '/products'})
       .then((response) => console.log(response));
   }, []);
 
