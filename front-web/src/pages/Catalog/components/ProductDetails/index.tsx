@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ReactComponent as ArrowIcon} from '../../../../core/assets/images/arrow.svg';
-import { ReactComponent as ProductImage} from '../../../../core/assets/images/product.svg';
 import ProductPrice from '../ProductPrice';
 import './styles.scss';
 
@@ -23,12 +22,11 @@ const ProductDetails = () => {
                  <div className="row">
                      <div className="col-6 pr-5"> 
                          <div className="product-details-card text-center">
-                             <ProductImage className="product-detail-image" />
                          </div>
                          <h1 className="product-details-name">
                              Computador Desktop - Intel Core i7
                          </h1>
-                         <ProductPrice price="3.339,00" />
+                         <ProductPrice price={3.339} />
                      </div>
                      <div className="col-6 product-details-card"> 
                          <h1 className="product-description-title">
