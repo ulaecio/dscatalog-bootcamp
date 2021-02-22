@@ -1,8 +1,9 @@
 import React from "react";
 import ContentLoader from "react-content-loader";
+import { generateList } from "../utils/list";
 
 const ProductCardLoader = () => {
-  const loaderItems = [0, 1, 2];
+  const loaderItems = generateList(5);
   return (
     <>
       {loaderItems.map((item) => (
