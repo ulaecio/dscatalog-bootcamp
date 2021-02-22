@@ -11,7 +11,7 @@ const Catalog = () => {
   useEffect( () => {
     const params = {
       page: 0,
-      linesPerPage: 18
+      linesPerPage: 14
     }
 
     makeRequest({ url: '/products', params })
@@ -24,7 +24,7 @@ const Catalog = () => {
 
       <div className="catalog-products">
         {productsResponse?.content.map(product => (
-          <Link to="/products/1" key={product.id}>
+          <Link to={`/products/${product.id}`} key={product.id}>
             < ProductCard product={product}/> 
             </Link>
         ))}
