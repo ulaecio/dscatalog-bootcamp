@@ -5,6 +5,7 @@ import ProductCard from './components/ProductCard';
 import ProductCardLoader from './components/Loaders/ProductCardLoader';
 import { makeRequest } from './components/utils/request';
 import './styles.scss';
+import Pagination from './components/Pagination';
 
 const Catalog = () => {
   const [productsResponse, setProductsResponse] = useState<ProductsResponse>();
@@ -12,7 +13,7 @@ const Catalog = () => {
   useEffect( () => {
     const params = {
       page: 0,
-      linesPerPage: 5
+      linesPerPage: 16
     }
 
     setIsLoading(true);
@@ -37,7 +38,7 @@ const Catalog = () => {
           ))
         )}
       </div>
-
+      <Pagination />
     </div>
   )
 };
