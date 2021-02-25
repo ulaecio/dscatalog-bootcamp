@@ -5,7 +5,7 @@ import { Product } from "../../../../core/types/Product";
 import ProductDescriptionLoader from "../Loaders/ProductDescriptionLoader";
 import ProductInfoLoader from "../Loaders/ProductInfoLoader";
 import ProductPrice from "../ProductPrice";
-import { makeRequest } from "../utils/request";
+import { makeRequest } from "../../../../core/utils/request";
 import "./styles.scss";
 
 type ParamsType = {
