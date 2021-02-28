@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import NavBar from "./components";
+import NavBar from "./components/NavBar";
 import Products from "./components/Products";
 import "./styles.scss"
 const Admin = () => (

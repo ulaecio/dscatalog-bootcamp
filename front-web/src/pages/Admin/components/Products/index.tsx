@@ -1,21 +1,13 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import List from './List';
 
 const Products = () => {
     return (
         <div>
-            <Link to="/admin/products" className="mr-5">
-                Listar produtos
-            </Link>
-            <Link to="/admin/products/create" className="mr-5">
-                Criar produtos
-            </Link>
-            <Link to="/admin/products/:productId" className="mr-5">
-                Editar produtos
-            </Link>
             <Switch>
                 <Route path="/admin/products" exact>
-                    <h1>Exibir a listagem de produtos</h1>
+                    <List />
                 </Route>
                 <Route path="/admin/products/create">
                     <h1>Criar novo produto</h1>
