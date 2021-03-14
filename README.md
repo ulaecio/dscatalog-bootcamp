@@ -1,4 +1,29 @@
 # dscatalog-bootcamp
+Projeto sendo desenvolvido através do BootCamp da DevSuperior. Mais detalhes posteriormente...
+## imagens
+Pagina inicial do Projeto
+![ds-catalog](https://user-images.githubusercontent.com/34926656/109734245-76ea1180-7b9f-11eb-9576-afdf29734e09.PNG)
+
+Pagina de produtos
+![ds-catalog-produtos](https://user-images.githubusercontent.com/34926656/109734255-78b3d500-7b9f-11eb-8207-4c27b17c4991.PNG)
+
+Pagina detalhes dos produtos
+![ds-catalog-detalhes](https://user-images.githubusercontent.com/34926656/109734252-78b3d500-7b9f-11eb-852a-6626aeb348af.PNG)
+
+Página Admin
+![ds-catalog-admin](https://user-images.githubusercontent.com/34926656/109734247-7782a800-7b9f-11eb-9cc3-e36944e8ba4f.PNG)
+
+Página Admin - Categorias
+![ds-catalog-admin-categorias](https://user-images.githubusercontent.com/34926656/109734250-7782a800-7b9f-11eb-9e9a-995893254b39.PNG)
+
+Página Admin - Users
+![ds-catalog-admin-users](https://user-images.githubusercontent.com/34926656/109734251-781b3e80-7b9f-11eb-9ac8-eeef549b73b1.PNG)
+
+### Projeto Geral
+![ds-geral](https://user-images.githubusercontent.com/34926656/109734256-78b3d500-7b9f-11eb-8a30-89fd7a3f129e.PNG)
+
+### Projeto Mobile
+![Mobile](https://user-images.githubusercontent.com/34926656/109734258-794c6b80-7b9f-11eb-8864-305001d2fa2d.PNG)
 
 # Recursos para back end
 ## Dependências Maven
