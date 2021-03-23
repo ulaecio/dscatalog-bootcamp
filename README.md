@@ -63,7 +63,8 @@ Página Admin - Users
 </dependency>
 ```
 ### pom.xml completo para Spring Boot versão 2.4.2:
-<?xml version="1.0" encoding="UTF-8"?>
+
+```<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -134,7 +135,7 @@ Página Admin - Users
 		</plugins>
 	</build>
 </project>
-
+```
 ## Parâmetros de paginação
 ```java
 @RequestParam(value = "page", defaultValue = "0") Integer page,
