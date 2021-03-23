@@ -27,8 +27,7 @@ Página Admin - Users
 
 # Recursos para back end
 ## Dependências Maven
-### Pegue o pom.xml completo para Spring Boot versão 2.4.2 no link abaixo:
-https://gist.github.com/acenelio/8292b51c23c02b353a478c2b0bd8d85e
+
 ```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -63,6 +62,78 @@ https://gist.github.com/acenelio/8292b51c23c02b353a478c2b0bd8d85e
 	<artifactId>spring-boot-starter-security</artifactId>
 </dependency>
 ```
+### pom.xml completo para Spring Boot versão 2.4.2:
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.2</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.devsuperior</groupId>
+	<artifactId>dsdeliver</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>dsdeliver</name>
+	<description>Projeto Semana DevSuperior 2.0</description>
+
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
 
 ## Parâmetros de paginação
 ```java
