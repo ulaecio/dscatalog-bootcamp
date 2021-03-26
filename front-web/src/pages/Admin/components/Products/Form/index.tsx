@@ -1,3 +1,4 @@
+import { makeRequest } from "core/utils/request";
 import React, { useState } from "react";
 import BaseForm from "../../BaseForm";
 import "./styles.scss";
@@ -10,9 +11,9 @@ type FormState = {
 
 const Form = () => {
   const [formData, setFormData] = useState<FormState>({
-    name: 'Computador Dell',
-    price: '1.100,55',
-    category: 'eletrônicos'
+    name: '',
+    price: '',
+    category: ''
   });
 
 
@@ -25,8 +26,14 @@ const Form = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const payload = {
+      ...formData, 
+      imgUrl: 'https://resize.cancaonova.com/resize/1800x1800/100/catalog/product//l/v/lv_livre_para_viver.jpg',
+      categories: [{ id: formData.category}]
 
-    console.log(formData);
+    }
+
+    makeRequest({ url: '/products', method: 'POST', data: payload});
 
   }
 
@@ -48,9 +55,9 @@ const Form = () => {
             className="form-control mb-5" onChange={handleOnChange}
             name="category"
             >
-                <option value="livros">Livros</option>
-                <option value="computadores">Computadores</option>
-                <option value="eletrônicos">Eletrônicos</option>
+                <option value="1">Livros</option>
+                <option value="3">Computadores</option>
+                <option value="2">Eletrônicos</option>
             </select>
             <input
               value={formData.price}
