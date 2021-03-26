@@ -7,17 +7,21 @@ type FormState = {
   name: string;
   price:string;
   category: string;
+  description: string;
 }
+
+type FormEvent =  React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>;
 
 const Form = () => {
   const [formData, setFormData] = useState<FormState>({
     name: '',
     price: '',
-    category: ''
+    category: '0',
+    description: ''
   });
 
 
-  const handleOnChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleOnChange = (event: FormEvent) => {
     const name = event.target.name;
     const value = event.target.value;
 
@@ -28,12 +32,15 @@ const Form = () => {
     event.preventDefault();
     const payload = {
       ...formData, 
-      imgUrl: 'https://resize.cancaonova.com/resize/1800x1800/100/catalog/product//l/v/lv_livre_para_viver.jpg',
+      imgUrl: 'https://www.pontofrio-imagens.com.br/html/conteudo-produto/484/839456/imagens/livro-jogosvorazes-1.jpg',
       categories: [{ id: formData.category}]
 
     }
 
-    makeRequest({ url: '/products', method: 'POST', data: payload});
+    makeRequest({ url: '/products', method: 'POST', data: payload})
+    .then(() => {
+      setFormData({ name: '', category: '', price: '', description: '' });
+    });
 
   }
 
@@ -55,6 +62,7 @@ const Form = () => {
             className="form-control mb-5" onChange={handleOnChange}
             name="category"
             >
+                <option value="0">Selecione a categoria</option>
                 <option value="1">Livros</option>
                 <option value="3">Computadores</option>
                 <option value="2">Eletrônicos</option>
@@ -66,6 +74,16 @@ const Form = () => {
               className="form-control"
               onChange={handleOnChange}
               placeholder="Insira o valor do produto"
+            />
+          </div>
+          <div className="col-6">
+            <textarea
+              name="description"
+              value={formData.description}
+              onChange={handleOnChange}
+              className="form-control"
+              cols={30}
+              rows={10}
             />
           </div>
         </div>
