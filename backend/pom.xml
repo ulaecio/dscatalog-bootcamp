@@ -14,12 +14,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dscatalog</name>
 	<description>DsCatalog BootCamp DevSuperior</description>
+	
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
 
-	<dependencies>
+<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -96,6 +97,5 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
-
+	</dependencyManagement>	
 </project>

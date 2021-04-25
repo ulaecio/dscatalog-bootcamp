@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -20,7 +19,10 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import com.devsuperior.dscatalog.component.JwtTokenEnhancer;
 
 
-@ComponentScan
+/**
+ * @author Ulaecio
+ *
+ */
 @Configuration
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
@@ -77,4 +79,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		.accessTokenConverter(accessTokenConverter)
 		.tokenEnhancer(chain);
 	}
+	
+	
 }

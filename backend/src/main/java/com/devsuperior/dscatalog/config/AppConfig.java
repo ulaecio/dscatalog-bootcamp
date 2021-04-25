@@ -7,6 +7,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
+import com.devsuperior.dscatalog.component.JwtTokenEnhancer;
+
 @Configuration
 public class AppConfig {
 	
@@ -28,6 +30,11 @@ public class AppConfig {
 	@Bean
 	public JwtTokenStore tokenStore() {
 		return new JwtTokenStore(accessTokenConverter());
+	}
+	
+	@Bean
+	public JwtTokenEnhancer tokenEnhancer() {
+		return new JwtTokenEnhancer();
 	}
 
 }

@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
@@ -13,7 +12,7 @@ import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 import com.devsuperior.dscatalog.entities.User;
 import com.devsuperior.dscatalog.repositories.UserRepository;
 
-@ComponentScan
+
 public class JwtTokenEnhancer implements TokenEnhancer{
 
 	@Autowired
