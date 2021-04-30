@@ -16,6 +16,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	
+	//CONFIGURAÇÃO DE AUTENTICAÇÃO DE E AUTORIZAÇÃO DE USUÁRIOS
 	@Autowired
 	private Environment env;
 	
@@ -25,7 +26,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	private static final String[] PUBLIC = {"/oauth/token", "/h2-console/**"};
 	private static final String[] OPERATOR_OR_ADMIM = {"/products/**", "/categories/**"};
 	private static final String[] ADMIN = {"/users/**"};
-
+	//CONFIGURAÇÃO DE AUTENTICAÇÃO DE E AUTORIZAÇÃO DE USUÁRIOS
+	
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		resources.tokenStore(tokenStore);
@@ -40,6 +42,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 		}
 		//PARA LIBERAÇÃO DO TESTE "h2-console"
 		
+		//CONFIGURAÇÃO DE AUTENTICAÇÃO DE E AUTORIZAÇÃO DE USUÁRIOS
 		http.authorizeRequests()
 		.antMatchers(PUBLIC).permitAll()
 		.antMatchers(HttpMethod.GET, OPERATOR_OR_ADMIM).permitAll()
@@ -47,6 +50,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 		.antMatchers(ADMIN).hasRole("ADMIN")
 		.anyRequest().authenticated();
 	}
-	
+		//CONFIGURAÇÃO DE AUTENTICAÇÃO DE E AUTORIZAÇÃO DE USUÁRIOS	
 
 }
