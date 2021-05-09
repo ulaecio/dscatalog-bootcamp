@@ -6,20 +6,20 @@ const Navbar = () => (
     <nav className="row bg-primary main-nav">
         <div className="col-2">
             <Link to="/" href="link" className="nav-logo-text">
-                <h4>DS Catalog</h4>
+                <h4>Meus produtos</h4>
             </Link>
         </div>
 
         <div className="col-6 offset-2">
             <ul className="main-menu">
                 <li>
-                    <NavLink to="/" activeClassName="active" exact>HOME</NavLink>
+                    <NavLink to="/" activeClassName="active" exact>Inicio</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/products" activeClassName="active">CATÁLOGO</NavLink>
+                    <NavLink to="/products" activeClassName="active">Catálogo</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/admin" activeClassName="active">ADMIN</NavLink>
+                    <NavLink to="/admin" activeClassName="active">Administrativo</NavLink>
                 </li>
             </ul>
         </div>
