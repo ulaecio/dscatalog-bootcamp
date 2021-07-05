@@ -1,5 +1,5 @@
 # dscatalog-bootcamp
-Projeto sendo desenvolvido através do BootCamp da DevSuperior. 
+Projeto SENDO DESENVOLVIDO (AINDA SEM RESPONSIVIDADE, SOMENTE DESKTOP), através do BootCamp da DevSuperior. 
 Catálogo de Produtos - é uma aplicação FullStack Web e Mobile construída durante o BootCamp DevSuperior.Evento organizado pela DevSuperior. A aplicação consiste em uma sistema Web e Mobile, de com um modelo de Visualização, cadastro, atualização e exclusão de produtos e Categorias, Cadastro de Usuários e controle de suas atribuições no sistema através de autenticação com token. Construção de API para busca de informaçoes no Banco de Dados em Nuvem, com Java e SpringBoot e utilização do ReactJS, HTML, CSS, JavaScript dentre outras bibliotecas complementares para o Front-End. Sistema super responsivo e  Dentre suas funcionalidades destacamos a Visualização dos detalhes dos produtos. Aplicação Web feito deploy em cloud com o Heroku (hospedagem grátis) buscando upload do projeto direto do GitHub.
 Mais detalhes posteriormente...
 Veja a evolução do projeto: https://ulaecio-catalog.netlify.app
