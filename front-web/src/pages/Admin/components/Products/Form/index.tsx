@@ -32,7 +32,7 @@ const Form = () => {
     event.preventDefault();
     const payload = {
       ...formData, 
-      imgUrl: 'https://www.pontofrio-imagens.com.br/html/conteudo-produto/484/839456/imagens/livro-jogosvorazes-1.jpg',
+      imgUrl: 'https://nutripao.com/wp-content/uploads/2022/08/Refrigerante-Cajuina-Sao-Geraldo-2-Litros.jpg',
       categories: [{ id: formData.category}]
 
     }
@@ -65,7 +65,8 @@ const Form = () => {
                 <option value="0">Selecione a categoria</option>
                 <option value="1">Livros</option>
                 <option value="3">Computadores</option>
-                <option value="2">Eletrônicos</option>
+                <option value="4">Eletrônicos</option>
+                <option value="5">Bebidas</option>
             </select>
             <input
               value={formData.price}
