@@ -6,18 +6,21 @@ const NavBar = () => (
   <nav className="admin-nav-container">
     <ul>
       <li>
+        {/* @ts-ignore*/}
         <NavLink to="/admin/products" className="admin-nav-item">
-          Meus Produtos
+          Produtos
         </NavLink>
       </li>
       <li>
+        {/* @ts-ignore*/}
         <NavLink to="/admin/categories" className="admin-nav-item">
-          Minhas Categorias
+          Categorias
         </NavLink>
       </li>
       <li>
+        {/* @ts-ignore*/}
         <NavLink to="/admin/users" className="admin-nav-item">
-          Meus Usuários{" "}
+          Usuários{" "}
         </NavLink>
       </li>
     </ul>

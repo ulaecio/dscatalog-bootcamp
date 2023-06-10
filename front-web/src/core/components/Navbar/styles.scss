@@ -1,14 +1,16 @@
 .main-nav {
     height: 70px;
-    color: #FFF;
+    color: var(--primary-hover-color);
     align-items: center;
     padding-left: 40px;
     margin-left: 0;
     margin-right: 0;
+
 }
 
 .nav-logo-text{
-    color: #FFF;
+    color: var(--primary-color);
+    text-decoration: transparent;
 }
 
 .main-menu {
@@ -17,15 +19,17 @@
     width: 380px;
     justify-content: space-between;
 
+
     a {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--primary-hover-color);
+        text-decoration: transparent;
 
         &.active{
             font-weight: bold;
-            color: #FFF;
+            color: var(--primary-color);
         }
         &:hover{
-            color: #FFF;
+            color: var(--primary-color);
         }
     }
 }

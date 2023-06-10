@@ -15,14 +15,15 @@
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.015em;
-    color: #9e9e9e;
+    color: var(--primary-hover-color);
+    text-decoration-color: transparent;
 
     &.active {
-        background: rgba(64, 123, 255, 0.3);
-        color: #407bff;
+        background: rgb(255, 255, 255);
+        color: var(--primary-color) !important;
     }
 
     &:hover {
-        color: #407bff;
+        color: var(--primary-color) !important;
     }
 }

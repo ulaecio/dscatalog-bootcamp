@@ -1,8 +1,23 @@
+:root {
+    --color-primary: #ff8400fd;
+    --color-third: #2085e9f3;
+    --primary-color: #ff8400bb;
+    --color-quarter: #fff;
+    --color-quarter: #ff8400bb;
+    --color-fosco: rgb(255, 255, 255, 0.100);
+    --primary-hover-color: #91684483;
+    --ml: 50%;
+    --ml2: 50%;
+    --mb: -3%;
+    --color-third: #ff8400fd;
+}
+
 $theme-colors:(
-    "primary": #407bff
+    "primary": #fff,
+    "secondary": #ff8400fd
 );
 
-$body-bg: #f2f2f2;
+$body-bg: #fff;
 $body-color: #263238;
 
 @import '~bootstrap/scss/bootstrap.scss';

@@ -12,10 +12,10 @@ const Admin = () => (
           <Products />
         </Route>
         <Route path="/admin/categories">
-          <h1>Categories</h1>
+          <h1>Categorias</h1>
         </Route>
         <Route path="/admin/users">
-          <h1>Users</h1>
+          <h1>Usuários</h1>
         </Route>
       </Switch>
     </div>

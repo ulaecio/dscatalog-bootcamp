@@ -1,0 +1,17 @@
+.home-btn-order {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.015em;
+    color: #FFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-justify: initial;
+}
+
+.home-btn-order:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}

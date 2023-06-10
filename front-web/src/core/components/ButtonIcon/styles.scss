@@ -1,12 +1,14 @@
+
 .btn-icon {
     height: 70px;
     width: 380px;
     border-radius: 10px 0 0 10px;
     text-transform: uppercase;
+    
 }
 
 .btn-icon-content {
-background-color: #33569b;
+background-color: var(--primary-hover-color);
 width: 70px;
 border-radius: 0 10px 10px 0;
 display: flex;
