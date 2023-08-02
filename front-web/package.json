@@ -1,7 +1,6 @@
 {
-  "name": "frontend",
+  "name": "front-web",
   "version": "0.1.0",
-  "homepage": "http://localhost:8080",
   "private": true,
   "dependencies": {
     "@angular/common": "^6.0.0",
@@ -67,9 +66,5 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.0"
-  },
-  "engines": {
-    "node": "14.8.0"
   }
 }
-
