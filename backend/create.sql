@@ -1,3 +1,9 @@
+CREATE TABLE conta
+(
+    id_conta IDENTITY NOT NULL PRIMARY KEY,
+    nome_responsavel VARCHAR(50) NOT NULL
+);
+
 create table tb_category (id  bigserial not null, created_at TIMESTAMP WITHOUT TIME ZONE, name varchar(255), updated_at TIMESTAMP WITHOUT TIME ZONE, primary key (id));
 create table tb_product (id  bigserial not null, date TIMESTAMP WITHOUT TIME ZONE, description TEXT, img_url varchar(255), name varchar(255), price float8, primary key (id));
 create table tb_product_category (product_id int8 not null, category_id int8 not null, primary key (product_id, category_id));
