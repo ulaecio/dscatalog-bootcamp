@@ -8,7 +8,7 @@ type RequestParams = {
     params?: object;
 }
 
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'https://ulasoftware-catalog-5e214633d80d.herokuapp.com';
 
 export const makeRequest = ({ method = 'GET', url, data, params}: RequestParams) => {
     return axios({
